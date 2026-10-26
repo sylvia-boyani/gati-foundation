@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.eventsPage {
+  --cream: #f8f3e7;
+  --burgundy: #7a1f2b;
+  --green: #1f4d3a;
+  --gold: #c9a227;
+  --dark: #18251f;
+  --white: #ffffff;
+
+  background: var(--cream);
+  color: var(--dark);
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.eventsHero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: white;
+}
+
+.eventsHeroImage {
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../../assets/images/conflict-aff.jpeg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+
+.eventsHeroOverlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(16, 30, 24, 0.88) 0%,
+      rgba(16, 30, 24, 0.62) 40%,
+      rgba(16, 30, 24, 0.15) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(10, 20, 15, 0.65),
+      transparent 55%
+    );
+}
+
+.eventsHeroContent {
+  position: relative;
+  z-index: 2;
+
+  width: min(1180px, 90%);
+  margin: 0 auto;
+
+  padding: 150px 0 90px;
+}
+
+.eventsEyebrow {
+  display: inline-block;
+
+  margin-bottom: 25px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  color: #e7cf79;
+}
+
+.eventsHero h1 {
+  max-width: 750px;
+
+  margin: 0;
+
+  font-size: clamp(55px, 7vw, 105px);
+  line-height: 0.95;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+
+.eventsHero h1 span {
+  display: block;
+
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.eventsHeroContent > p {
+  max-width: 610px;
+
+  margin: 35px 0;
+
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: rgba(255,255,255,0.88);
+}
+
+.eventsHeroMeta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.metaDivider {
+  width: 35px;
+  height: 1px;
+  background: #d6bc58;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.eventIntro {
+  width: min(1180px, 90%);
+  margin: auto;
+
+  padding: 130px 0 110px;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 35px;
+
+  color: var(--burgundy);
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+}
+
+.sectionLabel span {
+  display: block;
+
+  width: 35px;
+  height: 1px;
+
+  background: var(--gold);
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.introGrid h2,
+.activitiesHeader h2,
+.photoStoryHeader h2 {
+  margin: 0;
+
+  font-size: clamp(45px, 5vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+
+.introGrid h2 em,
+.activitiesHeader h2 em,
+.photoStoryHeader h2 em {
+  display: block;
+
+  color: var(--burgundy);
+
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.introText {
+  padding-top: 5px;
+}
+
+.introText p {
+  margin: 0 0 25px;
+
+  font-size: 15px;
+  line-height: 2;
+
+  color: #5d625d;
+}
+
+
+/* =========================
+   FEATURED EVENT
+========================= */
+
+.featuredEvent {
+  width: min(1280px, 92%);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+
+  background: #fff;
+}
+
+.featuredImage {
+  position: relative;
+  min-height: 650px;
+}
+
+.featuredImage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.imageCaption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+
+  padding: 10px 15px;
+
+  background: rgba(255,255,255,0.92);
+
+  color: var(--dark);
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.featuredContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 80px;
+}
+
+.featuredNumber {
+  margin-bottom: 25px;
+
+  color: var(--gold);
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.featuredContent h2 {
+  margin: 0 0 30px;
+
+  font-size: clamp(40px, 4vw, 62px);
+  line-height: 1;
+}
+
+.featuredContent h2 span {
+  display: block;
+
+  color: var(--burgundy);
+
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.featuredContent p {
+  color: #646864;
+
+  font-size: 14px;
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+}
+
+.eventsLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+
+  width: fit-content;
+
+  margin-top: 20px;
+
+  color: var(--green);
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 8px;
+}
+
+.eventsLink span {
+  font-size: 20px;
+}
+
+
+/* =========================
+   ACTIVITIES
+========================= */
+
+.activitiesSection {
+  width: min(1180px, 90%);
+  margin: auto;
+
+  padding: 140px 0;
+}
+
+.activitiesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 80px;
+
+  margin-bottom: 65px;
+}
+
+.activitiesHeader > div {
+  flex: 1;
+}
+
+.activitiesHeader > p {
+  width: 350px;
+
+  margin: 0;
+
+  color: #656b66;
+
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.activitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 55px 35px;
+}
+
+.activityCard {
+  background: white;
+}
+
+.activityImage {
+  position: relative;
+  height: 390px;
+  overflow: hidden;
+}
+
+.activityImage img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.6s ease;
+}
+
+.activityCard:hover .activityImage img {
+  transform: scale(1.04);
+}
+
+.activityImage span {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--burgundy);
+
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.activityContent {
+  padding: 25px 5px 5px;
+}
+
+.activityContent h3 {
+  margin: 0 0 10px;
+
+  color: var(--green);
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.activityContent p {
+  margin: 0;
+
+  max-width: 500px;
+
+  color: #666b67;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   PHOTO STORY
+========================= */
+
+.photoStory {
+  padding: 130px 5%;
+
+  background: #fff;
+}
+
+.photoStoryHeader {
+  max-width: 1180px;
+  margin: auto;
+
+  text-align: center;
+}
+
+.photoStoryHeader .sectionLabel {
+  justify-content: center;
+}
+
+.photoStoryHeader h2 {
+  margin-bottom: 25px;
+}
+
+.photoStoryHeader p {
+  max-width: 500px;
+
+  margin: auto;
+
+  color: #666;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.photoGrid {
+  max-width: 1280px;
+  margin: 70px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 100px;
+  gap: 15px;
+}
+
+.galleryItem {
+  overflow: hidden;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.04);
+}
+
+.galleryItem1 {
+  grid-column: span 5;
+  grid-row: span 5;
+}
+
+.galleryItem2 {
+  grid-column: span 4;
+  grid-row: span 3;
+}
+
+.galleryItem3 {
+  grid-column: span 3;
+  grid-row: span 5;
+}
+
+.galleryItem4 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.galleryItem5 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.galleryItem6 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+
+/* =========================
+   IMPACT
+========================= */
+
+.eventImpact {
+  background: var(--green);
+
+  color: white;
+
+  padding: 130px 7%;
+}
+
+.impactHeading {
+  max-width: 700px;
+  margin-bottom: 80px;
+}
+
+.sectionLabel.light {
+  color: #dfc96e;
+}
+
+.eventImpact h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 0.95;
+}
+
+.eventImpact h2 em {
+  color: #dfc96e;
+
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.impactHeading p {
+  max-width: 550px;
+
+  color: rgba(255,255,255,0.72);
+
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.impactStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+.impactStats div {
+  padding: 40px 25px 0;
+
+  border-right: 1px solid rgba(255,255,255,0.18);
+}
+
+.impactStats div:first-child {
+  padding-left: 0;
+}
+
+.impactStats div:last-child {
+  border-right: none;
+}
+
+.impactStats strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #dfc96e;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.impactStats span {
+  color: rgba(255,255,255,0.72);
+
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.eventsCTA {
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      rgba(122,31,43,0.94),
+      rgba(122,31,43,0.94)
+    ),
+    url("../../assets/images/widow2.jpeg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+.eventsCTA > div {
+  width: min(900px, 85%);
+  margin: auto;
+}
+
+.eventsCTA > div > span {
+  color: #dfc96e;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.eventsCTA h2 {
+  margin: 25px 0;
+
+  font-size: clamp(45px, 6vw, 78px);
+  line-height: 0.95;
+}
+
+.eventsCTA h2 em {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+.eventsCTA p {
+  max-width: 500px;
+
+  color: rgba(255,255,255,0.8);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 25px;
+  padding: 15px 25px;
+
+  background: white;
+
+  color: var(--burgundy);
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: var(--gold);
+  color: white;
+}
+
+.ctaButton span {
+  font-size: 18px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .eventsHero {
+    min-height: 75vh;
+  }
+
+  .eventsHero h1 {
+    letter-spacing: -1px;
+  }
+
+  .introGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .featuredEvent {
+    grid-template-columns: 1fr;
+  }
+
+  .featuredImage {
+    min-height: 500px;
+  }
+
+  .featuredContent {
+    padding: 55px 40px;
+  }
+
+  .activitiesHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .activitiesHeader > p {
+    width: 100%;
+  }
+
+  .impactStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impactStats div {
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+  }
+
+  .photoGrid {
+    grid-auto-rows: 80px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .eventsHeroContent {
+    padding: 120px 0 60px;
+  }
+
+  .eventsHero h1 {
+    font-size: 52px;
+  }
+
+  .eventsHeroContent > p {
+    font-size: 14px;
+  }
+
+  .eventsHeroMeta {
+    flex-wrap: wrap;
+  }
+
+  .eventIntro,
+  .activitiesSection {
+    padding: 85px 0;
+  }
+
+  .introGrid h2,
+  .activitiesHeader h2,
+  .photoStoryHeader h2 {
+    font-size: 48px;
+  }
+
+  .activitiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .activityImage {
+    height: 300px;
+  }
+
+  .photoStory {
+    padding: 85px 5%;
+  }
+
+  .photoGrid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 170px;
+  }
+
+  .galleryItem1,
+  .galleryItem2,
+  .galleryItem3,
+  .galleryItem4,
+  .galleryItem5,
+  .galleryItem6 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .galleryItem1 {
+    grid-column: span 2;
+  }
+
+  .eventImpact {
+    padding: 90px 7%;
+  }
+
+  .impactStats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .impactStats div {
+    padding: 30px 15px 25px;
+  }
+
+  .impactStats strong {
+    font-size: 43px;
+  }
+
+  .eventsCTA {
+    min-height: 450px;
+  }
+
+  .eventsCTA h2 {
+    font-size: 50px;
+  }
+}

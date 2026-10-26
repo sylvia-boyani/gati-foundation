@@ -153,6 +153,12 @@ const Header = () => {
                   </Link>
                 </li>
 
+                 <li>
+                  <Link to="/events" onClick={closeMenus}>
+                    Events
+                  </Link>
+                </li>
+
               </ul>
 
             </li>

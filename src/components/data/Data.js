@@ -68,33 +68,48 @@ export const featured = [
 export const list = [
   {
     id: 1,
-    cover: "../images/list/mentor2.jpeg",
-    name: "Mentorship Session",
+    cover: "../images/list/outdoor-mentorship.jpeg",
+    name: "Outdoor Mentorship Session at The Gwitembe Comprehensive School.",
   },
   {
     id: 2,
+    cover: "../images/list/conflict-aff.jpeg",
+    name: "Gwitembe’s young conflict-affected widows united in solidarity, shaping their future with MRF’s support..",
+  },
+  {
+    id: 3,
+    cover: "../images/list/widow2.jpeg",
+    name: "A widowed community leader embraces the youngest and recently widowed woman, reflecting the vital role of peer support and intergenerational solidarity in the face of loss.",
+  },
+  {
+    id: 4,
+    cover: "../images/list/trees2.jpeg",
+    name: "The MRF team nurturing a generation of climate-conscious girls through hands-on tree planting and environmental stewardship.",
+  },
+  {
+    id: 5,
+    cover: "../images/list/change.jpeg",
+    name: "We don't just believe in change. We become part of it.",
+  },
+  {
+    id: 6,
+    cover: "../images/list/inside-hse.jpeg",
+    name: "A young widow in Gwitembe recounts the killing of her husband, the flight from her home, and the profound changes that followed.",
+  },
+   {
+    id: 7,
     cover: "../images/list/all.jpeg",
     name: "Small acts of dignity support. Lifelong impact.",
   },
   {
-    id: 3,
+    id: 8,
     cover: "../images/list/lessons.jpeg",
     name: "Some of the most important lessons are shared, not taught.",
   },
   {
-    id: 4,
-    cover: "../images/list/Aroom.jpeg",
-    name: "A room full of girls. A future full of possibility.",
-  },
-  {
-    id: 5,
-    cover: "../images/list/herVoice.jpeg",
-    name: "When a girl finds her voice, others find the courage to speak.",
-  },
-  {
-    id: 6,
-    cover: "../images/list/full-team.jpeg",
-    name: "We don't just believe in change. We become part of it.",
+    id: 9,
+    cover: "../images/list/gitwembe-team.jpeg",
+    name: "One team, one purpose, showing up for the women and families of Gwitembe.",
   },
 ]
 

@@ -16,6 +16,7 @@ import Leadership from "../about/Leadership"
 import Partners from "../about/Partners"
 import OurWork from "../Our/OurWork"
 import OurImpact from "../Our/OurImpact"
+import Events from "../Our/Events"
 import Volunteer from "../volunteer/Volunteer"
 import Careers from "../Careers/Careers"
 
@@ -39,6 +40,7 @@ const Pages = () => {
           <Route exact path='/donate' component={Donate} />
           <Route exact path='/work' component={OurWork} />
           <Route exact path='/impact' component={OurImpact} />
+          <Route exact path='/events' component={Events} />
           <Route exact path='/volunteer' component={Volunteer} />
           <Route exact path='/careers' component={Careers} />
           <Route exact path='/partners' component={Partners} />
